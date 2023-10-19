@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,21 +15,282 @@
       rel="stylesheet"
       href="styles/style.css"
     />
+    <link
+      rel="stylesheet"
+      href="styles/contact.css"
+    />
   </head>
-  <nav></nav>
-  <body>
-    <div
-      class="section-container"
-      id="about-me"
-    ></div>
-    <div
-      class="section-container"
-      id="resume"
-    ></div>
-    <div
-      class="section-container"
-      id="contact-me"
-    ></div>
+  <body
+    class="vh-100 overflow-y-scroll"
+    data-bs-spy="scroll"
+    data-bs-target=".navbar"
+  >
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top border-bottom"
+    >
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand fs-3" href="#"
+          >Hy Nguyen</a
+        >
+        <!-- Toggle Menu Btn -->
+        <button
+          class="navbar-toggler shadow-none border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span
+            class="navbar-toggler-icon"
+          ></span>
+        </button>
+
+        <!-- SideBar -->
+        <div
+          class="sidebar offcanvas offcanvas-start vh-100"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <!-- Side Bar Header -->
+          <div
+            class="offcanvas-header text-white"
+          >
+            <h5
+              class="offcanvas-title"
+              id="offcanvasNavbarLabel"
+            >
+              <!-- Hy Nguyen -->
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white shadow-none"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- SideBar Body -->
+          <div
+            class="offcanvas-body d-flex flex-column flex-lg-row p-5 p-lg-0"
+          >
+            <ul
+              class="navbar-nav justify-content-lg-end align-items-center fs-5 flex-grow-1 pe-3"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active mx-2"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#about"
+                  >About Me</a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#Resume"
+                  >Resume</a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a
+                  class="nav-link"
+                  href="#Contact"
+                  >Contact Me</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="w-100 vh-100 d-flex flex-column justify-content-center align-items-center text-white"
+      id="home"
+    >
+      <div class="card">
+        <div
+          class="card-text text-center text-white shadow-none rounded-5 py-3"
+        >
+          <h1>Hi, I am Hy Nguyen</h1>
+          <div class="my-4 text-white"></div>
+          <h2>Pronounced like He</h2>
+        </div>
+      </div>
+    </section>
+    <section
+      class="vh-100 d-flex flex-column justify-content-center align-items-center p-5 text-center text-white mt-5"
+      id="about"
+    >
+      <div class="mx-5 card text-white">
+        <div
+          class="d-flex flex-lg-row flex-sm-column"
+        >
+          <div
+            class="d-flex flex-row justify-content-center align-items-center card-body"
+          >
+            <div
+              class="img-thumbnail col-4 d-none d-lg-block"
+            ></div>
+
+            <div>
+              <h2 class="card-title">About Me</h2>
+
+              <p class="my-4 mx-5 py-3 fs-5">
+                Hello, I'm Hy Nguyen, a passionate
+                aspiring software developer with a
+                focus on remote work. I'm
+                committed to mastering programming
+                languages, sharpening logical
+                thinking, and enhancing
+                communication skills to succeed in
+                this field.
+              </p>
+              <p class="my-4 mx-5 py-3 fs-5">
+                In my free time I love to go try
+                new restaurants. I go out of my
+                way to try new Asian spots, but I
+                enjoy all sorts of food. I try to
+                take a trip every year, and my
+                most memorable ones have been
+                Vietnam and New York City.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="vh-100 d-flex flex-column justify-content-center p-5 text-center text-white"
+      id="Resume"
+    >
+      <div
+        class="d-flex flex-row"
+        id="resume-content"
+      >
+        <div class="resume-preview">
+          <iframe
+            src="assets/NguyenHyResume.pdf"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+        </div>
+        <div class="card col-8 text-white">
+          <div class="card-title fs-2 my-4">
+            Resume Highlights
+          </div>
+          <div class="card-body text-start">
+            <h4>Industry Skills</h4>
+            <ul class="text-left">
+              <li>HTML/CSS, Node.js, React.js</li>
+              <li>C, C++, Java, Python</li>
+            </ul>
+            <h4>Skills from Work Experience</h4>
+            <ul class="text-left">
+              <li>
+                Clear and concise communication
+              </li>
+              <li>C, C++, Java, Python</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="vh-100 d-flex flex-column justify-content-center p-5 text-center text-white"
+      id="Contact"
+    >
+      <div class="form-area">
+        <div class="container">
+          <div
+            class="row single-form g-0 rounded-4"
+          >
+            <div class="col-sm-12 col-lg-6">
+              <div
+                class="left card rounded-4 shadow-none border-0"
+                id="contact-content"
+              >
+                <h2 class="rounded-3 text-center">
+                  <span>Contact Me!</span>
+                </h2>
+              </div>
+            </div>
+            <div
+              class="col-sm-12 col-lg-6"
+              id="form-right"
+            >
+              <div class="right">
+                <i class="fa fa-caret-left"></i>
+                <form>
+                  <div
+                    class="d-flex flex-column mb-3 text-start"
+                  >
+                    <label
+                      for="exampleInputEmail1"
+                      class="form-label"
+                      >Your Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                    />
+                  </div>
+                  <div
+                    class="d-flex flex-column mb-3 text-start"
+                  >
+                    <label
+                      for="exampleInputEmail1"
+                      class="form-label"
+                      >Email address</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                    />
+                  </div>
+                  <div
+                    class="d-flex flex-column mb-3 text-start"
+                  >
+                    <label
+                      for="exampleInputPassword1"
+                      class="form-label"
+                      >Message</label
+                    >
+                    <textarea
+                      type="password"
+                      class="form-control"
+                      id="exampleInputPassword1"
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn btn-primary"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"
+  ></script>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
 </html>

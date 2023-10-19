@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;300;500;700&display=swap');
+.form-area {
+	padding-top: 7%;
+}
+.row.single-form {
+	box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5);
+}
+.left {
+	background: url("../assets/img/house.jpg") rgba(255,255,255     ,.5);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+	padding: 220px 98px;
+}
+.left h2 {
+	font-family: poppins;
+	color: #fff;
+	font-weight: 700;
+	font-size: 48px;
+}
+.left h2 span {
+	font-weight: 100;
+}
+#contact-content h2{
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+
+}
+.single-form{
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+}
+.right {
+	padding: 70px 100px;
+	position: relative;
+}
+.right i {
+	position: absolute;
+	font-size: 80px;
+	left: -27px;
+	top: 40%;
+	color: #fff;
+}
+.form-control {
+	border: 2px solid #000;
+}
+.right button {
+	border: none;
+	border-radius: .25em;
+	background: #252525;
+	width: 180px;
+	color: #fff;
+	padding: 15px 0;
+	display: inline-block;
+	font-size: 16px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.right button:hover{
+    background-color: #252525;
+}
+
+
+/*responsive*/
+
+@media (min-width:768px) and (max-width:991px){
+    .right i {
+	top: -52px;
+	transform: rotate(90deg);
+	left: 50%;
+}
+}
+
+@media (max-width:767px){
+    .left {
+  padding: 90px 15px;
+  text-align: center;
+}
+.left h2 {
+  font-size: 25px;
+}
+.right {
+  padding: 25px;
+}
+.right i {
+  top: -52px;
+  transform: rotate(90deg);
+  left: 46%;
+}
+    .right button {
+	width: 150px;
+	padding: 12px 0;
+}
+    
+}
+
+
+
+
+
+/* 
+
+
+input {
+    outline: none;
+    border:none
+}
+
+textarea {
+    outline: none;
+    border:none
+}
+
+textarea:focus, input:focus {
+    border-color:transparent !important
+}
+
+input:focus::-webkit-input-placeholder {
+    color:transparent
+}
+
+input:focus:-moz-placeholder {
+    color:transparent
+}
+
+input:focus::-moz-placeholder {
+    color:transparent
+}
+
+input:focus:-ms-input-placeholder {
+    color:transparent
+}
+
+textarea:focus::-webkit-input-placeholder {
+    color:transparent
+}
+
+textarea:focus:-moz-placeholder {
+    color:transparent
+}
+
+textarea:focus::-moz-placeholder {
+    color:transparent
+}
+
+textarea:focus:-ms-input-placeholder {
+    color:transparent
+}
+
+input::-webkit-input-placeholder {
+    color:#999
+}
+
+input:-moz-placeholder {
+    color:#999
+}
+
+input::-moz-placeholder {
+    color:#999
+}
+
+input:-ms-input-placeholder {
+    color:#999
+}
+
+textarea::-webkit-input-placeholder {
+    color:#999
+}
+
+textarea:-moz-placeholder {
+    color:#999
+}
+
+textarea::-moz-placeholder {
+    color:#999
+}
+
+textarea:-ms-input-placeholder {
+    color:#999
+}
+
+button {
+    outline: none !important;
+    border: none;
+    background:0 0
+}
+
+button:hover {
+    cursor:pointer
+}
+
+.bg-contact2 {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover
+}
+
+.container-contact2 {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.wrap-contact2 {
+    width: 790px;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(20px);    border-radius: 10px;
+    overflow: hidden;
+    padding:72px 55px 90px
+}
+
+.contact2-form {
+    width:100%
+}
+
+.contact2-form-title {
+    display: block;
+    font-family: Poppins-Bold;
+    font-size: 39px;
+    color: #333;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom:90px
+}
+
+.wrap-input2 {
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin-bottom:37px
+}
+
+.input2 {
+    display: block;
+    width: 100%;
+    font-family: Poppins-Regular;
+    font-size: 15px;
+    color: #555;
+    line-height:1.2
+}
+
+.focus-input2 {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events:none
+}
+
+.focus-input2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+    background: #db1563;
+    background: -webkit-linear-gradient(45deg, #d5007d, #e53935);
+    background: -o-linear-gradient(45deg, #d5007d, #e53935);
+    background: -moz-linear-gradient(45deg, #d5007d, #e53935);
+    background:linear-gradient(45deg, #d5007d, #e53935)
+}
+
+.focus-input2::after {
+    content: attr(data-placeholder);
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: Poppins-Regular;
+    font-size: 13px;
+    color: #999;
+    line-height: 1.2;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition:all .4s
+}
+
+input.input2 {
+    height:45px
+}
+
+input.input2 + .focus-input2::after {
+    top: 16px;
+    left:0
+}
+
+textarea.input2 {
+    min-height: 115px;
+    padding-top: 13px;
+    padding-bottom:13px
+}
+
+textarea.input2 + .focus-input2::after {
+    top: 16px;
+    left:0
+}
+
+.input2:focus + .focus-input2::after {
+    top:-13px
+}
+
+.input2:focus + .focus-input2::before {
+    width:100%
+}
+
+.has-val.input2 + .focus-input2::after {
+    top:-13px
+}
+
+.has-val.input2 + .focus-input2::before {
+    width:100%
+}
+
+.container-contact2-form-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top:13px
+}
+
+.wrap-contact2-form-btn {
+    display: block;
+    position: relative;
+    z-index: 1;
+    border-radius: 2px;
+    width: auto;
+    overflow: hidden;
+    margin:0 auto
+}
+
+.contact2-form-bgbtn {
+    position: absolute;
+    z-index: -1;
+    width: 300%;
+    height: 100%;
+    background: #db1563;
+    background: -webkit-linear-gradient(-135deg, #d5007d, #e53935, #d5007d, #e53935);
+    background: -o-linear-gradient(-135deg, #d5007d, #e53935, #d5007d, #e53935);
+    background: -moz-linear-gradient(-135deg, #d5007d, #e53935, #d5007d, #e53935);
+    background: linear-gradient(-135deg, #d5007d, #e53935, #d5007d, #e53935);
+    top: 0;
+    left: -100%;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition:all .4s
+}
+
+.contact2-form-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-width: 244px;
+    height: 50px;
+    font-family: Poppins-Medium;
+    font-size: 16px;
+    color: #fff;
+    line-height:1.2
+}
+
+.wrap-contact2-form-btn:hover .contact2-form-bgbtn {
+    left:0
+}
+
+@media (max-width: 576px) {
+    .wrap-contact2 {
+        padding:72px 15px 90px
+    }
+}
+
+.validate-input {
+    position:relative
+}
+
+.alert-validate::before {
+    content: attr(data-validate);
+    position: absolute;
+    max-width: 70%;
+    background-color: #fff;
+    border: 1px solid #c80000;
+    border-radius: 2px;
+    padding: 4px 25px 4px 10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0;
+    pointer-events: none;
+    font-family: Poppins-Regular;
+    color: #c80000;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: left;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .4s;
+    -o-transition: opacity .4s;
+    -moz-transition: opacity .4s;
+    transition:opacity .4s
+}
+
+.alert-validate::after {
+    content: "\f12a";
+    font-family: FontAwesome;
+    display: block;
+    position: absolute;
+    color: #c80000;
+    font-size: 16px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right:8px
+}
+
+.alert-validate:hover:before {
+    visibility: visible;
+    opacity:1
+}
+
+@media (max-width: 992px) {
+    .alert-validate::before {
+        visibility: visible;
+        opacity: 1
+    }
+} */ */
